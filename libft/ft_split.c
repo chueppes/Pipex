@@ -69,17 +69,26 @@ static void	ft_free(int i, char **ret)
 
 static int	ft_wordlen(char const *s, char c)
 {
-	int	count;
 	int	i;
 
 	i = 0;
-	count = 0;
 	while (s[i] != c && s[i] != '\0')
 	{
-		count++;
+		if (s[i] == '"')
+		{
+			i++;
+			while (s[i] != '"')
+				i++;
+		}
+		if (s[i] == 39)
+		{
+			i++;
+			while (s[i] != 39)
+				i++;
+		}
 		i++;
 	}
-	return (count);
+	return (i);
 }
 
 static int	ft_wordcount(char const *s, char c)
@@ -91,6 +100,18 @@ static int	ft_wordcount(char const *s, char c)
 	j = 0;
 	while (*s != '\0')
 	{
+		if (*s == '"')
+		{
+			s++;
+			while (*s != '"')
+				s++;
+		}
+		if (*s == 39)
+		{
+			s++;
+			while (*s != 39)
+				s++;
+		}
 		if (*s != c && i == 0)
 		{
 			i = 1;

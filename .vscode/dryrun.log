@@ -1,10 +1,11 @@
 make --dry-run --always-make --keep-going --print-directory
-make: Entering directory '/home/annaclara/Downloads/Pipex'
+make: Entering directory `/Users/acalvo4/Desktop/Pipex-3'
 gcc -Wall -Wextra -Werror -I ./libft/ -c ft_path.c -o ft_path.o
 gcc -Wall -Wextra -Werror -I ./libft/ -c ft_error.c -o ft_error.o
 gcc -Wall -Wextra -Werror -I ./libft/ -c pipex.c -o pipex.o
-cd ./libft/ && make && cp -v libft.a ../pipex.a
-make[1]: Entering directory '/home/annaclara/Downloads/Pipex/libft'
+/Applications/Xcode.app/Contents/Developer/usr/bin/make -C ./libft/ 
+ 
+make[1]: Entering directory `/Users/acalvo4/Desktop/Pipex-3/libft'
 cc -Werror -Wextra -Wall -c ft_isalpha.c -o ft_isalpha.o
 cc -Werror -Wextra -Wall -c ft_isdigit.c -o ft_isdigit.o
 cc -Werror -Wextra -Wall -c ft_isalnum.c -o ft_isalnum.o
@@ -35,11 +36,13 @@ cc -Werror -Wextra -Wall -c ft_split.c -o ft_split.o
 cc -Werror -Wextra -Wall -c ft_itoa.c -o ft_itoa.o
 cc -Werror -Wextra -Wall -c ft_strmapi.c -o ft_strmapi.o
 cc -Werror -Wextra -Wall -c ft_striteri.c -o ft_striteri.o
-ar rcs libft.a ft_isalpha.o ft_isdigit.o ft_isalnum.o ft_isascii.o ft_isprint.o ft_strlen.o ft_memset.o ft_bzero.o ft_memcpy.o ft_memmove.o ft_strlcpy.o ft_strlcat.o ft_toupper.o ft_tolower.o ft_strchr.o ft_strrchr.o ft_strncmp.o ft_memchr.o ft_memcmp.o ft_strnstr.o ft_atoi.o ft_calloc.o ft_strdup.o ft_substr.o ft_strjoin.o ft_strtrim.o ft_split.o ft_itoa.o ft_strmapi.o ft_striteri.o
+cc -Werror -Wextra -Wall -c ft_putchar_fd.c -o ft_putchar_fd.o
+cc -Werror -Wextra -Wall -c ft_putstr_fd.c -o ft_putstr_fd.o
+cc -Werror -Wextra -Wall -c ft_putendl_fd.c -o ft_putendl_fd.o
+cc -Werror -Wextra -Wall -c ft_putnbr_fd.c -o ft_putnbr_fd.o
+ar rcs libft.a ft_isalpha.o ft_isdigit.o ft_isalnum.o ft_isascii.o ft_isprint.o ft_strlen.o ft_memset.o ft_bzero.o ft_memcpy.o ft_memmove.o ft_strlcpy.o ft_strlcat.o ft_toupper.o ft_tolower.o ft_strchr.o ft_strrchr.o ft_strncmp.o ft_memchr.o ft_memcmp.o ft_strnstr.o ft_atoi.o ft_calloc.o ft_strdup.o ft_substr.o ft_strjoin.o ft_strtrim.o ft_split.o ft_itoa.o ft_strmapi.o ft_striteri.o ft_putchar_fd.o ft_putstr_fd.o ft_putendl_fd.o ft_putnbr_fd.o
 ranlib libft.a
-make[1]: Leaving directory '/home/annaclara/Downloads/Pipex/libft'
-make: Leaving directory '/home/annaclara/Downloads/Pipex'
+make[1]: Leaving directory `/Users/acalvo4/Desktop/Pipex-3/libft'
+gcc ft_path.o ft_error.o pipex.o ./libft/libft.a -o pipex
+make: Leaving directory `/Users/acalvo4/Desktop/Pipex-3'
  
-cp: cannot stat 'libft.a': No such file or directory
-make: *** [Makefile:19: pipex.a] Error 1
-

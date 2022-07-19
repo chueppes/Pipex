@@ -6,7 +6,7 @@
 /*   By: acalvo4 <acalvo4@student.42.rio>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/18 09:36:22 by acalvo4           #+#    #+#             */
-/*   Updated: 2022/07/18 09:36:23 by acalvo4          ###   ########.fr       */
+/*   Updated: 2022/07/18 20:15:28 by acalvo4          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,22 +14,19 @@
 # define PIPEX_H
 
 # include "./libft/libft.h"
+# include <errno.h>
+# include <string.h>
 # include <fcntl.h>
 # include <stdio.h>
 # include <sys/wait.h>
-# include <errno.h>
 
-# define ERROR_INFILE "Infile"
-# define ERROR_OUTFILE "Outfile"
-# define ERROR_INPUT "Invalid number of arguments\n"
-# define ERROR_PIPE "Error: Pipe"
-# define ERROR_CMD "Command not found\n"
+int		child(char **argv, char **envp, int *fd, int *fdpipe);
+int		child2(char **argv, char **envp, int *fd, int *fdpipe);
 
-void	child(char **argv, char **envp, int *fd, int *fdpipe);
-void	child2(char **argv, char **envp, int *fd, int *fdpipe);
-void	error(char *msg);
+void	errorm(char *msg, int code);
+int		error_return(char *msg, int code);
 int		ft_putchar(char *c);
-char	*ft_put(char *c);
+
 char	*ft_path(char **envp, char *cmd);
 char	*test_path(char **path, char *cmd);
 

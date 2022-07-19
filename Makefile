@@ -1,11 +1,8 @@
-NAME	= pipex.a
-
+NAME	= pipex
 CC	= gcc
 CFLAGS	= -Wall -Wextra -Werror
-AR	= ar rcs
 RM	= /bin/rm -f
 RANLIB = ranlib
-FILE    = pipex
 LIBRARY = ./libft/
 
 SRC	= ft_path.c ft_error.c pipex.c 
@@ -16,21 +13,19 @@ OBJS	= $(SRC:.c=.o)
 	$(CC) $(CFLAGS) -I $(LIBRARY) -c $< -o $(<:.c=.o)
 
 $(NAME):	$(OBJS)
-	cd $(LIBRARY) && $(MAKE) && cp -v libft.a ../$(NAME)
-	$(AR) $(NAME) $(OBJS)
-	$(RANLIB) $(NAME)
-	$(CC) $(NAME) -o $(FILE)
+	$(MAKE) -C $(LIBRARY) 
+	$(CC) $(OBJS) $(LIBRARY)libft.a -o $(NAME)
 
 all:	$(NAME)
 
 clean:
 	$(RM) $(OBJS)
 	$(RM) $(FILE)
-	cd $(LIBRARY) && $(MAKE) clean
+	$(MAKE) -C $(LIBRARY) clean
 
 fclean:	clean
 	$(RM) $(NAME) 
-	cd $(LIBRARY) && $(MAKE) fclean
+	$(MAKE) -C $(LIBRARY) fclean
 
 re:	fclean all
 

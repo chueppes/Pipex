@@ -6,7 +6,7 @@
 /*   By: acalvo4 <acalvo4@student.42.rio>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/18 09:36:00 by acalvo4           #+#    #+#             */
-/*   Updated: 2022/07/18 09:36:02 by acalvo4          ###   ########.fr       */
+/*   Updated: 2022/07/18 20:51:11 by acalvo4          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,40 +14,35 @@
 
 char	*ft_path(char **envp, char *cmd)
 {
-	char	*env_path;
 	char	**path;
 	int		i;
 
 	i = 0;
-	while (envp[i])
-	{
-		env_path = ft_strnstr(envp[i], "PATH=", 5);
-		if (env_path)
-		{
-			env_path = ft_strtrim(env_path, "PATH=");
-			break ;
-		}
+	while (!ft_strnstr(envp[i], "PATH=", 5))
 		i++;
-	}
-	path = ft_split(&env_path[i], ':');
+	path = ft_split(envp[i] + 5, ':');
 	return (test_path(path, cmd));
 }
 
 char	*test_path(char **path, char *cmd)
 {
 	char	*tmp;
+	char	*tmp2;
 	int		i;
 
 	i = 0;
+	
+	if (ft_strnstr(cmd, "/", ft_strlen(cmd)))
+		return (cmd);
 	while (path[i])
 	{
-		tmp = path[i];
-		path[i] = ft_strjoin(path[i], "/");
-		tmp = ft_strjoin(path[i], cmd);
-		if (access(tmp, F_OK | X_OK) == 0)
-			return (tmp);
+		tmp = ft_strjoin(path[i], "/");
+		tmp2 = ft_strjoin(tmp, cmd);
 		free(tmp);
+		if (access(tmp2, F_OK | X_OK) == 0)
+				return (tmp2);
+		free(tmp2);
 		i++;
 	}
-	return (ft_put(ERROR_CMD));
+	return (0);
 }

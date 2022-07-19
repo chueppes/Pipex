@@ -6,16 +6,16 @@
 /*   By: acalvo4 <acalvo4@student.42.rio>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/18 09:35:50 by acalvo4           #+#    #+#             */
-/*   Updated: 2022/07/18 09:35:53 by acalvo4          ###   ########.fr       */
+/*   Updated: 2022/07/18 20:23:39 by acalvo4          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "pipex.h"
 
-void	error(char *msg)
+void	errorm(char *msg, int code)
 {
-	perror(msg);
-	exit(EXIT_FAILURE);
+	ft_putstr_fd(msg, STDERR_FILENO);
+	exit(code);
 }
 
 int	ft_putchar(char *c)
@@ -24,8 +24,8 @@ int	ft_putchar(char *c)
 	exit(EXIT_FAILURE);
 }
 
-char	*ft_put(char *c)
+int	error_return(char *msg, int code)
 {
-	write(2, c, ft_strlen(c));
-	exit(EXIT_FAILURE);
+	ft_putendl_fd(msg, STDERR_FILENO);
+	return (code);
 }

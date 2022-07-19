@@ -1,24 +1,24 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_lstlast_bonus.c                                 :+:      :+:    :+:   */
+/*   ft_putstr_fd.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: anna_calvo <acalvo@student.42.rio>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/05/30 20:39:16 by anna_calvo        #+#    #+#             */
-/*   Updated: 2022/05/31 12:46:47 by acalvo4          ###   ########.fr       */
+/*   Created: 2022/05/29 21:29:46 by anna_calvo        #+#    #+#             */
+/*   Updated: 2022/05/29 22:11:10 by anna_calvo       ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-t_list	*ft_lstlast(t_list *lst)
+void	ft_putstr_fd(char *s, int fd)
 {
-	if (!lst)
-		return (NULL);
-	if (lst == NULL)
-		return (0);
-	while (lst ->next != NULL)
-		lst = lst->next;
-	return (lst);
+	if (!s)
+		return ;
+	while (*s)
+	{
+		ft_putchar_fd(*s, fd);
+		s ++;
+	}
 }
