@@ -6,7 +6,7 @@
 /*   By: acalvo4 <acalvo4@student.42.rio>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/18 09:36:00 by acalvo4           #+#    #+#             */
-/*   Updated: 2022/07/18 20:51:11 by acalvo4          ###   ########.fr       */
+/*   Updated: 2022/07/20 12:00:59 by acalvo4          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,7 +31,6 @@ char	*test_path(char **path, char *cmd)
 	int		i;
 
 	i = 0;
-	
 	if (ft_strnstr(cmd, "/", ft_strlen(cmd)))
 		return (cmd);
 	while (path[i])
@@ -40,7 +39,7 @@ char	*test_path(char **path, char *cmd)
 		tmp2 = ft_strjoin(tmp, cmd);
 		free(tmp);
 		if (access(tmp2, F_OK | X_OK) == 0)
-				return (tmp2);
+			return (tmp2);
 		free(tmp2);
 		i++;
 	}

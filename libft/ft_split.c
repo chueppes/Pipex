@@ -6,9 +6,10 @@
 /*   By: acalvo4 <acalvo4@student.42.rio>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/26 15:55:16 by acalvo4           #+#    #+#             */
-/*   Updated: 2022/05/30 15:48:37 by acalvo4          ###   ########.fr       */
+/*   Updated: 2022/07/20 12:37:30 by acalvo4          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
 #include "libft.h"
 
 static int	ft_wordlen(char const *s, char c);
@@ -100,18 +101,7 @@ static int	ft_wordcount(char const *s, char c)
 	j = 0;
 	while (*s != '\0')
 	{
-		if (*s == '"')
-		{
-			s++;
-			while (*s != '"')
-				s++;
-		}
-		if (*s == 39)
-		{
-			s++;
-			while (*s != 39)
-				s++;
-		}
+		s = check_quotation(s);
 		if (*s != c && i == 0)
 		{
 			i = 1;
