@@ -6,7 +6,7 @@
 /*   By: acalvo4 <acalvo4@student.42.rio>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/18 09:36:11 by acalvo4           #+#    #+#             */
-/*   Updated: 2022/07/20 18:33:13 by acalvo4          ###   ########.fr       */
+/*   Updated: 2022/07/22 14:32:09 by acalvo4          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,6 +16,7 @@ void	child(char **argv, char **envp, int *fd, int *fdpipe)
 {
 	pid_t	pid1;
 	char	**cmd;
+	char	*path;
 
 	pid1 = fork();
 	if (pid1 <= -1)
@@ -30,20 +31,24 @@ void	child(char **argv, char **envp, int *fd, int *fdpipe)
 		dup2(fd[0], STDIN_FILENO);
 		dup2(fdpipe[1], STDOUT_FILENO);
 		close(fdpipe[0]);
-		if (!ft_path(envp, cmd[0]))
-		{
-			error_cmd(cmd);
-			free(cmd);
-		}
-		else 
-			execve(ft_path(envp, cmd[0]), cmd, envp);
+		path = ft_path(envp, cmd[0]);
+		execve(path, cmd, envp);
+		write (2, cmd, check_null(cmd, 0));
+		write (2, ": command not found\n", 20);
+		exit(127);
 	}
+}
+
+void	exec (char *cmd, char **anv)
+{
+	char **args -------------------
 }
 
 void	child2(char **argv, char **envp, int *fd, int *fdpipe)
 {
 	pid_t	pid2;
 	char	**cmd;
+	char	*path;
 
 	pid2 = fork();
 	if (pid2 <= -1)
@@ -58,13 +63,11 @@ void	child2(char **argv, char **envp, int *fd, int *fdpipe)
 		dup2(fd[1], STDOUT_FILENO);
 		dup2(fdpipe[0], STDIN_FILENO);
 		close(fdpipe[1]);
-		if (!ft_path(envp, cmd[0]))
-		{
-			error_cmd(cmd);
-			free(cmd);
-		}
-		else 
-			execve(ft_path(envp, cmd[0]), cmd, envp);
+		path = ft_path(envp, cmd[0]);
+		execve(path, cmd, envp);
+		write (2, cmd, check_null(cmd, 0));
+		write (2, ": command not found\n", 20);
+		exit(127);
 	}
 }
 

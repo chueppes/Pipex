@@ -6,7 +6,7 @@
 /*   By: acalvo4 <acalvo4@student.42.rio>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/18 09:36:22 by acalvo4           #+#    #+#             */
-/*   Updated: 2022/07/20 13:52:43 by acalvo4          ###   ########.fr       */
+/*   Updated: 2022/07/22 14:26:38 by acalvo4          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,5 +28,6 @@ void	error(char *message);
 char	*ft_path(char **envp, char *cmd);
 char	*test_path(char **path, char *cmd);
 char	**ft_trim(char **cmd);
+int		check_null(char **str, char	c);
 
 #endif

@@ -1,4 +1,4 @@
-make --dry-run --keep-going --print-directory
+make --dry-run --always-make --keep-going --print-directory
 make: Entering directory '/home/annaclara/Documents/Pipex'
 gcc -Wall -Wextra -Werror -I ./libft/ -c ft_path.c -o ft_path.o
 gcc -Wall -Wextra -Werror -I ./libft/ -c ft_error.c -o ft_error.o

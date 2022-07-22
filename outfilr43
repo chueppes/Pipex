@@ -1,0 +1,14 @@
+dfdf.c
+ft_error.c
+ft_error.o
+ft_path.c
+ft_path.o
+infile
+libft
+Makefile
+outfilr43
+pipex
+pipex.c
+pipex.h
+pipex.o
+run_tests.sh

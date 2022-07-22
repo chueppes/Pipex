@@ -1,5 +1,628 @@
 make all --print-data-base --no-builtin-variables --no-builtin-rules --question
-make: *** No rule to make target 'ft_path.o', needed by 'pipex'.  Stop.
+make -C ./libft/ 
+ 
+# make[1]: Entering directory '/home/annaclara/Documents/Pipex/libft'
+# GNU Make 4.3
+# Built for x86_64-redhat-linux-gnu
+# Copyright (C) 1988-2020 Free Software Foundation, Inc.
+# License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+# This is free software: you are free to change and redistribute it.
+# There is NO WARRANTY, to the extent permitted by law.
+ 
+make[1]: *** No rule to make target 'ft_split.o', needed by 'libft.a'.  Stop.
+
+
+# Make data base, printed on Thu Jul 21 20:36:43 2022
+
+# Variables
+
+# makefile (from 'Makefile', line 7)
+OBJ = ${C_SOURCE:.c=.o}
+# environment
+GDK_BACKEND = x11
+# environment
+LC_ALL = C
+# environment
+NO_AT_BRIDGE = 1
+# makefile (from 'Makefile', line 9)
+BONUS_OBJ = ${BONUS_SOURCE:.c=.o}
+# environment
+GJS_DEBUG_OUTPUT = stderr
+# environment
+VSCODE_CWD = /home/annaclara
+# environment
+GDM_LANG = en_US.UTF-8
+# default
+MAKE_COMMAND := make
+# environment
+define BASH_FUNC_which%%
+() {  ( alias;
+ eval ${which_declare} ) | /usr/bin/which --tty-only --read-alias --read-functions --show-tilde --show-dot $@
+}
+endef
+# automatic
+@D = $(patsubst %/,%,$(dir $@))
+# environment
+VSCODE_HANDLES_UNCAUGHT_ERRORS = true
+# default
+.VARIABLES := 
+# environment
+PWD = /home/annaclara/Documents/Pipex
+# automatic
+%D = $(patsubst %/,%,$(dir $%))
+# environment
+HOSTNAME = fedora
+# environment
+MAIL = /var/spool/mail/annaclara
+# environment
+XDG_DATA_DIRS = /home/annaclara/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop
+# automatic
+^D = $(patsubst %/,%,$(dir $^))
+# automatic
+%F = $(notdir $%)
+# environment
+VSCODE_CODE_CACHE_PATH = /home/annaclara/.config/Code/CachedData/b06ae3b2d2dbfe28bca3134cc6be65935cdfea6a
+# environment
+LANG = C
+# environment
+XAUTHORITY = /run/user/1000/.mutter-Xwaylandauth.NG0QP1
+# default
+.LOADED := 
+# default
+.INCLUDE_DIRS = /usr/include /usr/local/include /usr/include
+# makefile
+MAKEFLAGS = pqrRw
+# makefile
+CURDIR := /home/annaclara/Documents/Pipex/libft
+# environment
+APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = 1
+# environment
+LESSOPEN = ||/usr/bin/lesspipe.sh %s
+# automatic
+*D = $(patsubst %/,%,$(dir $*))
+# environment
+MFLAGS = -pqrRw
+# environment
+SSH_AUTH_SOCK = /run/user/1000/keyring/ssh
+# default
+.SHELLFLAGS := -c
+# environment
+WAYLAND_DISPLAY = wayland-0
+# environment
+HISTSIZE = 1000
+# automatic
++D = $(patsubst %/,%,$(dir $+))
+# environment
+XDG_SESSION_DESKTOP = gnome
+# makefile (from 'Makefile', line 1)
+MAKEFILE_LIST := Makefile
+# automatic
+@F = $(notdir $@)
+# environment
+VSCODE_PID = 2686
+# environment
+XDG_SESSION_TYPE = wayland
+# automatic
+?D = $(patsubst %/,%,$(dir $?))
+# environment
+SESSION_MANAGER = local/unix:@/tmp/.ICE-unix/1786,unix/unix:/tmp/.ICE-unix/1786
+# automatic
+*F = $(notdir $*)
+# environment
+CHROME_DESKTOP = code-url-handler.desktop
+# environment
+DBUS_SESSION_BUS_ADDRESS = unix:path=/run/user/1000/bus
+# automatic
+<D = $(patsubst %/,%,$(dir $<))
+# environment
+VSCODE_NLS_CONFIG = {"locale":"en-us","availableLanguages":{},"_languagePackSupport":true}
+# default
+MAKE_HOST := x86_64-redhat-linux-gnu
+# makefile
+SHELL = /bin/sh
+# environment
+XMODIFIERS = @im=ibus
+# environment
+GJS_DEBUG_TOPICS = JS ERROR;JS LOG
+# environment
+SHLVL = 0
+# environment
+MAKELEVEL := 1
+# default
+MAKE = $(MAKE_COMMAND)
+# environment
+PATH = /home/annaclara/.local/bin:/home/annaclara/bin:/usr/local/bin:/usr/local/sbin:/usr/bin:/usr/sbin:/var/lib/snapd/snap/bin
+# default
+MAKEFILES := 
+# automatic
+^F = $(notdir $^)
+# environment
+INVOCATION_ID = 584804390a85435e9dd3fcebab40c197
+# environment
+USERNAME = annaclara
+# environment
+GNOME_SETUP_DISPLAY = :1
+# automatic
+?F = $(notdir $?)
+# makefile (from 'Makefile', line 1)
+NAME = libft.a
+# environment
+XDG_CURRENT_DESKTOP = GNOME
+# environment
+KDEDIRS = /usr
+# automatic
++F = $(notdir $+)
+# environment
+DESKTOP_SESSION = gnome
+# environment
+ORIGINAL_XDG_CURRENT_DESKTOP = GNOME
+# 'override' directive
+GNUMAKEFLAGS := 
+# environment
+LOGNAME = annaclara
+# makefile (from 'Makefile', line 13)
+C_FLAGS = -Werror -Wextra -Wall
+# environment
+GIO_LAUNCHED_DESKTOP_FILE = /usr/share/applications/code.desktop
+# makefile
+.DEFAULT_GOAL := all
+# environment
+SYSTEMD_EXEC_PID = 1837
+# makefile (from 'Makefile', line 15)
+RM = rm -f
+# environment
+HISTCONTROL = ignoredups
+# environment
+EDITOR = /usr/bin/nano
+# environment
+DISPLAY = :0
+# environment
+USER = annaclara
+# default
+MAKE_VERSION := 4.3
+# environment
+MANAGERPID = 1669
+# environment
+which_declare = declare -f
+# environment
+DEBUGINFOD_URLS = https://debuginfod.fedoraproject.org/ 
+# environment
+GIO_LAUNCHED_DESKTOP_FILE_PID = 2686
+# environment
+_ = /usr/bin/make
+# environment
+XDG_RUNTIME_DIR = /run/user/1000
+# makefile (from 'Makefile', line 5)
+BONUS_SOURCE = ft_lstnew_bonus.c ft_lstadd_front_bonus.c ft_lstsize_bonus.c ft_lstlast_bonus.c ft_lstadd_back_bonus.c ft_lstdelone_bonus.c  ft_lstclear_bonus.c ft_lstiter_bonus.c ft_lstmap_bonus.c 
+# makefile (from 'Makefile', line 3)
+C_SOURCE = ft_isalpha.c ft_isdigit.c ft_isalnum.c ft_isascii.c ft_isprint.c ft_strlen.c ft_memset.c ft_bzero.c ft_memcpy.c ft_memmove.c ft_strlcpy.c ft_strlcat.c ft_toupper.c ft_tolower.c ft_strchr.c ft_strrchr.c ft_strncmp.c ft_memchr.c ft_memcmp.c ft_strnstr.c ft_atoi.c ft_calloc.c ft_strdup.c ft_substr.c ft_strjoin.c ft_strtrim.c ft_split.c ft_itoa.c ft_strmapi.c ft_striteri.c ft_putchar_fd.c ft_putstr_fd.c ft_putendl_fd.c ft_putnbr_fd.c ft_split_utils.c
+# environment
+JOURNAL_STREAM = 8:30583
+# environment
+XDG_SESSION_CLASS = user
+# environment
+VSCODE_AMD_ENTRYPOINT = vs/workbench/api/node/extensionHostProcess
+# environment
+HOME = /home/annaclara
+# environment
+QT_IM_MODULE = ibus
+# environment
+ELECTRON_RUN_AS_NODE = 1
+# environment
+VSCODE_IPC_HOOK = /run/user/1000/vscode-81023116-1.69.1-main.sock
+# default
+.RECIPEPREFIX := 
+# automatic
+<F = $(notdir $<)
+# default
+SUFFIXES := 
+# default
+.FEATURES := target-specific order-only second-expansion else-if shortest-stem undefine oneshell nocomment grouped-target extra-prereqs archives jobserver output-sync check-symlink guile load
+# makefile (from 'Makefile', line 11)
+CC = cc
+# environment
+XDG_MENU_PREFIX = gnome-
+# environment
+GDMSESSION = gnome
+# variable set hash-table stats:
+# Load=102/1024=10%, Rehash=0, Collisions=4/140=3%
+
+# Pattern-specific Variable Values
+
+# No pattern-specific variable values.
+
+# Directories
+
+# . (device 40, inode 109313): 76 files, no impossibilities.
+
+# 76 files, no impossibilities in 1 directories.
+
+# Implicit Rules
+
+# No implicit rules.
+
+# Files
+
+# Not a target:
+ft_isalpha.o:
+#  Implicit rule search has been done.
+#  Last modified 2022-07-21 14:53:36.293944358
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+ft_lstadd_front_bonus.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+.c.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 18):
+	${CC} ${C_FLAGS} -c $< -o ${<:.c=.o}
+
+# Not a target:
+ft_strchr.o:
+#  Implicit rule search has been done.
+#  Last modified 2022-07-21 14:53:36.483944923
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+ft_putstr_fd.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+ft_isprint.o:
+#  Implicit rule search has been done.
+#  Last modified 2022-07-21 14:53:36.336944485
+#  File has been updated.
+#  Successfully updated.
+
+libft.a: ft_isalpha.o ft_isdigit.o ft_isalnum.o ft_isascii.o ft_isprint.o ft_strlen.o ft_memset.o ft_bzero.o ft_memcpy.o ft_memmove.o ft_strlcpy.o ft_strlcat.o ft_toupper.o ft_tolower.o ft_strchr.o ft_strrchr.o ft_strncmp.o ft_memchr.o ft_memcmp.o ft_strnstr.o ft_atoi.o ft_calloc.o ft_strdup.o ft_substr.o ft_strjoin.o ft_strtrim.o ft_split.o ft_itoa.o ft_strmapi.o ft_striteri.o ft_putchar_fd.o ft_putstr_fd.o ft_putendl_fd.o ft_putnbr_fd.o ft_split_utils.o
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 27):
+	ar rcs ${NAME} ${OBJ}
+	ranlib ${NAME}
+
+# Not a target:
+ft_lstiter_bonus.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+ft_lstlast_bonus.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+ft_toupper.o:
+#  Implicit rule search has been done.
+#  Last modified 2022-07-21 14:53:36.456944842
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+ft_isalnum.o:
+#  Implicit rule search has been done.
+#  Last modified 2022-07-21 14:53:36.31494442
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+ft_putendl_fd.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+ft_striteri.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+Makefile:
+#  Implicit rule search has been done.
+ 
+#  Last modified 2022-07-20 12:39:07.707754036
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+ft_strlen.o:
+#  Implicit rule search has been done.
+#  Last modified 2022-07-21 14:53:36.35194453
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+ft_lstnew_bonus.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+ft_strnstr.o:
+#  Implicit rule search has been done.
+#  Last modified 2022-07-21 14:53:36.562945157
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+ft_strmapi.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+ft_strdup.o:
+#  Implicit rule search has been done.
+#  Last modified 2022-07-21 14:53:36.612945306
+#  File has been updated.
+#  Successfully updated.
+
+bonus: ft_lstnew_bonus.o ft_lstadd_front_bonus.o ft_lstsize_bonus.o ft_lstlast_bonus.o ft_lstadd_back_bonus.o ft_lstdelone_bonus.o ft_lstclear_bonus.o ft_lstiter_bonus.o ft_lstmap_bonus.o
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 23):
+	ar rcs	${NAME} ${BONUS_OBJ}
+	ranlib	${NAME}
+
+clean:
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 31):
+	${RM} ${OBJ} ${BONUS_OBJ}
+
+# Not a target:
+ft_itoa.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+ft_memset.o:
+#  Implicit rule search has been done.
+#  Last modified 2022-07-21 14:53:36.367944578
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+ft_isascii.o:
+#  Implicit rule search has been done.
+#  Last modified 2022-07-21 14:53:36.325944453
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+ft_memcpy.o:
+#  Implicit rule search has been done.
+#  Last modified 2022-07-21 14:53:36.39894467
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+ft_strtrim.o:
+#  Implicit rule search has been done.
+#  Last modified 2022-07-21 14:53:36.662945455
+#  File has been updated.
+#  Successfully updated.
+
+re: fclean all
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+
+# Not a target:
+ft_bzero.o:
+#  Implicit rule search has been done.
+#  Last modified 2022-07-21 14:53:36.383944625
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+ft_isdigit.o:
+#  Implicit rule search has been done.
+#  Last modified 2022-07-21 14:53:36.30494439
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+ft_putnbr_fd.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+ft_strjoin.o:
+#  Implicit rule search has been done.
+#  Last modified 2022-07-21 14:53:36.645945404
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+ft_strlcat.o:
+#  Implicit rule search has been done.
+#  Last modified 2022-07-21 14:53:36.44594481
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+ft_split_utils.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+.DEFAULT:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+all: libft.a
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+
+fclean: clean
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 34):
+		${RM} ${NAME}
+
+# Not a target:
+ft_lstdelone_bonus.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+ft_lstsize_bonus.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+ft_lstadd_back_bonus.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+ft_memmove.o:
+#  Implicit rule search has been done.
+#  Last modified 2022-07-21 14:53:36.414944717
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+ft_atoi.o:
+#  Implicit rule search has been done.
+#  Last modified 2022-07-21 14:53:36.578945205
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+ft_strlcpy.o:
+ 
+#  Implicit rule search has been done.
+#  Last modified 2022-07-21 14:53:36.430944765
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+ft_lstclear_bonus.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+ft_calloc.o:
+#  Implicit rule search has been done.
+#  Last modified 2022-07-21 14:53:36.595945255
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+ft_split.o:
+#  Implicit rule search has been done.
+#  File does not exist.
+#  File has not been updated.
+
+# Not a target:
+ft_memcmp.o:
+#  Implicit rule search has been done.
+#  Last modified 2022-07-21 14:53:36.545945107
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+ft_lstmap_bonus.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+ft_substr.o:
+#  Implicit rule search has been done.
+#  Last modified 2022-07-21 14:53:36.628945354
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+ft_strrchr.o:
+#  Implicit rule search has been done.
+#  Last modified 2022-07-21 14:53:36.498944967
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+ft_strncmp.o:
+#  Implicit rule search has been done.
+#  Last modified 2022-07-21 14:53:36.514945015
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+ft_putchar_fd.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+.PHONY: all clean fclean re
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+ft_tolower.o:
+#  Implicit rule search has been done.
+#  Last modified 2022-07-21 14:53:36.467944875
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+ft_memchr.o:
+#  Implicit rule search has been done.
+#  Last modified 2022-07-21 14:53:36.530945062
+#  File has been updated.
+#  Successfully updated.
+
+# files hash-table stats:
+# Load=55/1024=5%, Rehash=0, Collisions=3/119=3%
+# VPATH Search Paths
+
+# No 'vpath' search paths.
+
+# No general ('VPATH' variable) search path.
+
+# strcache buffers: 1 (0) / strings = 107 / storage = 1413 B / avg = 13 B
+# current buf: size = 8162 B / used = 1413 B / count = 107 / avg = 13 B
+
+# strcache performance: lookups = 152 / hit rate = 29%
+# hash-table stats:
+# Load=107/8192=1%, Rehash=0, Collisions=0/152=0%
+# Finished Make data base on Thu Jul 21 20:36:43 2022
+
+# make[1]: Leaving directory '/home/annaclara/Documents/Pipex/libft'
+ 
+make: *** [Makefile:16: pipex] Error 2
 
 # GNU Make 4.3
 # Built for x86_64-redhat-linux-gnu
@@ -8,7 +631,7 @@ make: *** No rule to make target 'ft_path.o', needed by 'pipex'.  Stop.
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
 
-# Make data base, printed on Wed Jul 20 12:40:05 2022
+# Make data base, printed on Thu Jul 21 20:36:43 2022
 
 # Variables
 
@@ -59,7 +682,7 @@ VSCODE_CODE_CACHE_PATH = /home/annaclara/.config/Code/CachedData/b06ae3b2d2dbfe2
 # environment
 LANG = C
 # environment
-XAUTHORITY = /run/user/1000/.mutter-Xwaylandauth.9FAKP1
+XAUTHORITY = /run/user/1000/.mutter-Xwaylandauth.NG0QP1
 # default
 .LOADED := 
 # default
@@ -93,7 +716,7 @@ MAKEFILE_LIST := Makefile
 # automatic
 @F = $(notdir $@)
 # environment
-VSCODE_PID = 3806
+VSCODE_PID = 2686
 # environment
 XDG_SESSION_TYPE = wayland
 # automatic
@@ -101,7 +724,7 @@ XDG_SESSION_TYPE = wayland
 # makefile (from 'Makefile', line 5)
 RANLIB = ranlib
 # environment
-SESSION_MANAGER = local/unix:@/tmp/.ICE-unix/1802,unix/unix:/tmp/.ICE-unix/1802
+SESSION_MANAGER = local/unix:@/tmp/.ICE-unix/1786,unix/unix:/tmp/.ICE-unix/1786
 # automatic
 *F = $(notdir $*)
 # environment
@@ -137,7 +760,7 @@ MAKEFILES :=
 # automatic
 ^F = $(notdir $^)
 # environment
-INVOCATION_ID = 9d7c44e838b34f418eb47ec9360c63bd
+INVOCATION_ID = 584804390a85435e9dd3fcebab40c197
 # environment
 USERNAME = annaclara
 # environment
@@ -165,7 +788,7 @@ GIO_LAUNCHED_DESKTOP_FILE = /usr/share/applications/code.desktop
 # makefile
 .DEFAULT_GOAL := pipex
 # environment
-SYSTEMD_EXEC_PID = 1853
+SYSTEMD_EXEC_PID = 1837
 # makefile (from 'Makefile', line 4)
 RM = /bin/rm -f
 # environment
@@ -179,7 +802,7 @@ USER = annaclara
 # default
 MAKE_VERSION := 4.3
 # environment
-MANAGERPID = 1684
+MANAGERPID = 1669
 # environment
 which_declare = declare -f
 # makefile (from 'Makefile', line 6)
@@ -187,7 +810,7 @@ LIBRARY = ./libft/
 # environment
 DEBUGINFOD_URLS = https://debuginfod.fedoraproject.org/ 
 # environment
-GIO_LAUNCHED_DESKTOP_FILE_PID = 3806
+GIO_LAUNCHED_DESKTOP_FILE_PID = 2686
 # environment
 _ = /usr/bin/make
 # environment
@@ -195,7 +818,7 @@ XDG_RUNTIME_DIR = /run/user/1000
 # makefile (from 'Makefile', line 3)
 CFLAGS = -Wall -Wextra -Werror
 # environment
-JOURNAL_STREAM = 8:31607
+JOURNAL_STREAM = 8:30583
 # environment
 XDG_SESSION_CLASS = user
 # environment
@@ -223,7 +846,7 @@ XDG_MENU_PREFIX = gnome-
 # environment
 GDMSESSION = gnome
 # variable set hash-table stats:
-# Load=103/1024=10%, Rehash=0, Collisions=8/137=6%
+# Load=103/1024=10%, Rehash=0, Collisions=11/148=7%
 
 # Pattern-specific Variable Values
 
@@ -231,9 +854,10 @@ GDMSESSION = gnome
 
 # Directories
 
-# . (device 40, inode 109241): 15 files, no impossibilities.
+ 
+# . (device 40, inode 109241): 20 files, no impossibilities.
 
-# 15 files, no impossibilities in 1 directories.
+# 20 files, no impossibilities in 1 directories.
 
 # Implicit Rules
 
@@ -257,8 +881,28 @@ Makefile:
 
 pipex: ft_path.o ft_error.o pipex.o
 #  Implicit rule search has not been done.
-#  File does not exist.
-#  File has not been updated.
+#  Implicit/static pattern stem: ''
+#  Last modified 2514-05-29 21:53:03.107374182
+#  File has been updated.
+#  Failed to be updated.
+# automatic
+# @ := pipex
+# automatic
+# * := 
+# automatic
+# < := ft_path.o
+# automatic
+# + := ft_path.o ft_error.o pipex.o
+# automatic
+# % := 
+# automatic
+# ^ := ft_path.o ft_error.o pipex.o
+# automatic
+# ? := ft_path.o ft_error.o pipex.o
+# automatic
+# | := 
+# variable set hash-table stats:
+# Load=8/32=25%, Rehash=0, Collisions=3/19=16%
 #  recipe to execute (from 'Makefile', line 16):
 	$(MAKE) -C $(LIBRARY) 
 	$(CC) $(OBJS) $(LIBRARY)libft.a -o $(NAME)
@@ -281,9 +925,10 @@ re: fclean all
 
 # Not a target:
 pipex.o:
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
+#  Implicit rule search has been done.
+#  Last modified 2022-07-21 14:53:36.276944307
+#  File has been updated.
+#  Successfully updated.
 
 # Not a target:
 .DEFAULT:
@@ -293,17 +938,19 @@ pipex.o:
 
 # Not a target:
 ft_error.o:
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
+#  Implicit rule search has been done.
+#  Last modified 2022-07-21 14:53:36.252944236
+#  File has been updated.
+#  Successfully updated.
 
 all: pipex
 #  Phony target (prerequisite of .PHONY).
 #  Command line target.
- 
 #  Implicit rule search has not been done.
 #  File does not exist.
 #  File has not been updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/11=0%
 
 fclean: clean
 #  Phony target (prerequisite of .PHONY).
@@ -314,6 +961,12 @@ fclean: clean
 	$(RM) $(NAME) 
 	$(MAKE) -C $(LIBRARY) fclean
 
+# Not a target:
+.SUFFIXES:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
 .PHONY: all clean fclean re
 #  Implicit rule search has not been done.
 #  Modification time never checked.
@@ -322,23 +975,24 @@ fclean: clean
 # Not a target:
 ft_path.o:
 #  Implicit rule search has been done.
-#  File does not exist.
-#  File has not been updated.
+#  Last modified 2022-07-21 14:53:36.232944177
+#  File has been updated.
+#  Successfully updated.
 
 # files hash-table stats:
-# Load=13/1024=1%, Rehash=0, Collisions=0/35=0%
+# Load=13/1024=1%, Rehash=0, Collisions=0/37=0%
 # VPATH Search Paths
 
 # No 'vpath' search paths.
 
 # No general ('VPATH' variable) search path.
 
-# strcache buffers: 1 (0) / strings = 29 / storage = 232 B / avg = 8 B
-# current buf: size = 8162 B / used = 232 B / count = 29 / avg = 8 B
+# strcache buffers: 1 (0) / strings = 31 / storage = 255 B / avg = 8 B
+# current buf: size = 8162 B / used = 255 B / count = 31 / avg = 8 B
 
-# strcache performance: lookups = 49 / hit rate = 40%
+# strcache performance: lookups = 55 / hit rate = 43%
 # hash-table stats:
-# Load=29/8192=0%, Rehash=0, Collisions=0/49=0%
-# Finished Make data base on Wed Jul 20 12:40:05 2022
+# Load=31/8192=0%, Rehash=0, Collisions=0/55=0%
+# Finished Make data base on Thu Jul 21 20:36:43 2022
 
  
